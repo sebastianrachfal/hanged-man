@@ -16,6 +16,9 @@ export default class Keyboard extends React.Component {
     this.state = { clicked: [] };
     this.clickedLetter = this.clickedLetter.bind(this);
   }
+  componentDidMount() {
+    if (!!this.props.randomLetter) this.clickedLetter(this.props.randomLetter);
+  }
   clickedLetter(letter) {
     this.props.fnClicked(letter);
     this.setState({ clicked: [...this.state.clicked, letter] });

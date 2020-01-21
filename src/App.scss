@@ -14,12 +14,19 @@ body {
   overflow: hidden;
 }
 .content {
+  transition: 1s opacity;
   flex: 15;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: 1s opacity;
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .menu {
   width: 100%;
@@ -29,9 +36,16 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
+  &__ending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   &__heading {
     font-size: 2em;
+    text-align: center;
   }
   &__button {
     padding: 10px 30px;
@@ -118,8 +132,7 @@ body {
   display: flex;
   flex-direction: column;
   &__graphics {
-    padding-top: 10px;
-    flex: 3;
+    flex: 2;
     width: 100%;
     display: flex;
     align-items: center;
@@ -130,7 +143,7 @@ body {
       stroke-width: 2.5;
       opacity: 1;
       transform: translate(0, -194.177px);
-      line-caps:mitter;
+      line-caps: mitter;
     }
     &__pathTransition {
       transition: 2s stroke-dashoffset;
@@ -142,8 +155,17 @@ body {
       }
     }
   }
-  &__text {
+  &__category {
     flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  &__text {
+    flex: 2;
     width: 100%;
     display: flex;
     flex-direction: row;
