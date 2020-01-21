@@ -1,0 +1,18 @@
+{
+  "Imiona": {
+    "easy": ["ala", "ola", "pola"],
+    "medium": ["alicja", "klaudia", "dorota"],
+    "hard": ["maurycy", "nataniel", "sebastian"]
+  },
+  "Zwierzęta": {
+    "easy": ["kot", "pies", "lis"],
+    "medium": ["delfin", "zebra", "owca"],
+    "hard": ["hipopotam", "jaszczurka", "antylopa"]
+  },
+
+  "Przedmioty": {
+    "easy": ["kosz", "kula", "okno"],
+    "medium": ["klucz", "lampa", "talerz"],
+    "hard": ["termometr", "telefon", "telewizor"]
+  }
+}

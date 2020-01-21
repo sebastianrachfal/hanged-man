@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 350px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.content {
+  flex: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s opacity;
+}
+.menu {
+  width: 100%;
+  height: 30%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    font-size: 2em;
+  }
+  &__button {
+    padding: 10px 30px;
+    border: 1px solid black !important;
+    margin: 3px;
+    transition: 0.5s background-color, 0.1s transform;
+    &:hover {
+      background-color: rgba(211, 211, 211, 0.486);
+    }
+    &:active {
+      transform: scale(0.92);
+    }
+    &__play {
+      margin-top: 40px;
+      background-color: rgb(0, 0, 0) !important;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 3px;
+      box-shadow: 1px 1px 5px 0px #00000061;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+      }
+    }
+  }
+}
+.footing {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.25);
+}
+.button_clear {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.keyboard {
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__button {
+    font-size: 1.5em;
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 100px;
+    max-height: 100px;
+    width: 10vw;
+    height: 10vw;
+    transition: 0.2s background-color, 0.1s transform;
+    &:hover {
+      background-color: rgba(211, 211, 211, 0.486);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+    &--disabled {
+      cursor: default;
+      background-color: rgba(211, 211, 211, 0.486);
+      &:hover {
+        background-color: none;
+      }
+      &:active {
+        transform: scale(1);
+      }
+    }
+  }
+}
+.game {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__graphics {
+    padding-top: 10px;
+    flex: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & path {
+      fill: none;
+      stroke: #000000;
+      stroke-width: 2.5;
+      opacity: 1;
+      transform: translate(0, -194.177px);
+      line-caps:mitter;
+    }
+    &__pathTransition {
+      transition: 2s stroke-dashoffset;
+    }
+    &--thick {
+      stroke-width: 3 !important;
+      &er {
+        stroke-width: 4 !important;
+      }
+    }
+  }
+  &__text {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__field {
+      font-size: 2em;
+      min-width: 30px;
+      min-height: 30px;
+      max-width: 50px;
+      max-height: 50px;
+      width: 4vw;
+      height: 4vw;
+      border-bottom: 3px solid black;
+      margin: 5px;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+}
+.letter {
+  transition: 0.2s opacity;
+  opacity: 1;
+  &--hidden {
+    opacity: 0;
+  }
+}
+.categories {
+  display: flex;
+  width: 35%;
+  min-width: 300px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__heading {
+    font-size: 17px;
+    margin: 20px;
+  }
+  &__random {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__additional {
+    min-width: 300px;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__difficulty {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__letter {
+      margin-top: 10px;
+    }
+  }
+  &__button {
+    width: 45%;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px 0px #00000061;
+    border-radius: 3px;
+    &--selected {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    }
+    &__diff {
+      padding: 10px 10px;
+      width: 30%;
+    }
+  }
+}
+
+@media all and (max-width: 960px) {
+  .game__text__field {
+    font-size: 1.5em;
+  }
+}
