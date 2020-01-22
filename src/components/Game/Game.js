@@ -50,7 +50,7 @@ class Game extends React.Component {
         <div className="game__category">Kategoria: {this.props.category}</div>
 
         <div className="game__graphics">
-          <svg xmlns="http://www.w3.org/2000/svg" width="249" height="389" version="1.1" viewBox="0 0 64.327 102.923">
+          <svg className="game__graphics__svg" xmlns="http://www.w3.org/2000/svg" width="249" height="389" version="1.1" viewBox="0 0 64.327 102.923">
             <path ref={this.gallows[0]} className="game__graphics--thicker" opacity="1" d="m 0,294.88331 h 40.000001 v 0" />
             <path ref={this.gallows[1]} className="game__graphics--thicker" d="m 20.000001,295.95487 c 0,-101.86458 0,-101.86458 0,-101.86458" />
             <path ref={this.gallows[2]} className="game__graphics--thicker" d="M 18.4446,196.20696 H 58.444599" />

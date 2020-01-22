@@ -116,9 +116,9 @@ body {
     }
     &--disabled {
       cursor: default;
-      background-color: rgba(211, 211, 211, 0.486);
+      background-color: rgba(160, 160, 160, 0.521);
       &:hover {
-        background-color: none;
+        background-color: rgba(160, 160, 160, 0.521);
       }
       &:active {
         transform: scale(1);
@@ -143,6 +143,9 @@ body {
       stroke-width: 2.5;
       opacity: 1;
       transform: translate(0, -194.177px);
+    }
+    &__svg {
+      height: 40vh;
     }
     &__pathTransition {
       transition: 2s stroke-dashoffset;
@@ -251,5 +254,23 @@ body {
 @media all and (max-width: 960px) {
   .game__text__field {
     font-size: 1.5em;
+  }
+}
+// @media all and (min-height: 820px) {
+//   .keyboard__button {
+//     max-width: 70px;
+//     max-height: 70px;
+//   }
+// }
+// @media all and (max-height: 819px) {
+//   .keyboard__button {
+//     max-width: 40px;
+//     max-height: 40px;
+//   }
+// }
+@media all and (max-height: 710px) {
+  .keyboard__button {
+    max-width: 40px;
+    max-height: 40px;
   }
 }
