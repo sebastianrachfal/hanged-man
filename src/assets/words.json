@@ -6,13 +6,17 @@
   },
   "Zwierzęta": {
     "easy": ["kot", "pies", "lis"],
-    "medium": ["delfin", "zebra", "owca"],
+    "medium": ["delfin", "zebra", "owca", "koala"],
     "hard": ["hipopotam", "jaszczurka", "antylopa"]
   },
-
   "Przedmioty": {
     "easy": ["kosz", "kula", "okno"],
     "medium": ["klucz", "lampa", "talerz"],
     "hard": ["termometr", "telefon", "telewizor"]
+  },
+  "Owoce": {
+    "easy": ["banan", "malina", "kiwi"],
+    "medium": ["truskawka", "gruszka", "agrest"],
+    "hard": ["granat", "poziomka", "liczi"]
   }
 }
