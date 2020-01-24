@@ -32,11 +32,13 @@ class App extends React.Component {
     }, 1000);
   }
   gameEvent(event) {
-    this.contentScreen.current.style.opacity = 0;
     setTimeout(() => {
-      this.setState({ event: event });
-      this.contentScreen.current.style.opacity = 1;
-    }, 1000);
+      this.contentScreen.current.style.opacity = 0;
+      setTimeout(() => {
+        this.setState({ event: event });
+        this.contentScreen.current.style.opacity = 1;
+      }, 1000);
+    }, 750);
   }
   replayGame() {
     this.contentScreen.current.style.opacity = 0;
