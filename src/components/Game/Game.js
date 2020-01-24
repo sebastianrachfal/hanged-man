@@ -16,7 +16,6 @@ class Game extends React.Component {
     if (n === 10) this.props.gameEvent('loss');
   }
   componentDidMount() {
-    console.log('mount', this.gallows);
     for (let el of this.gallows) {
       el.current.style['stroke-dasharray'] = el.current.style['stroke-dashoffset'] = el.current.getTotalLength();
       setTimeout(() => el.current.classList.add('game__graphics__pathTransition'), 500);
@@ -39,7 +38,6 @@ class Game extends React.Component {
       this.setState({ currentGame: snapshot });
 
       this.wordLeftovers = this.wordLeftovers.split(this.props.clicked[this.props.clicked.length - 1]).join('');
-      console.log(this.wordLeftovers);
       if (this.wordLeftovers.length === 0) this.props.gameEvent('win');
     }
   }
