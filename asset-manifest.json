@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "sebastianrachfal.github.io/hanged-man/static/css/main.a1f38011.chunk.css",
+    "main.js": "sebastianrachfal.github.io/hanged-man/static/js/main.44883065.chunk.js",
+    "main.js.map": "sebastianrachfal.github.io/hanged-man/static/js/main.44883065.chunk.js.map",
+    "runtime-main.js": "sebastianrachfal.github.io/hanged-man/static/js/runtime-main.36f66594.js",
+    "runtime-main.js.map": "sebastianrachfal.github.io/hanged-man/static/js/runtime-main.36f66594.js.map",
+    "static/js/2.a08938c6.chunk.js": "sebastianrachfal.github.io/hanged-man/static/js/2.a08938c6.chunk.js",
+    "static/js/2.a08938c6.chunk.js.map": "sebastianrachfal.github.io/hanged-man/static/js/2.a08938c6.chunk.js.map",
+    "index.html": "sebastianrachfal.github.io/hanged-man/index.html",
+    "precache-manifest.94985a43be4c71c8f6313203809455d1.js": "sebastianrachfal.github.io/hanged-man/precache-manifest.94985a43be4c71c8f6313203809455d1.js",
+    "service-worker.js": "sebastianrachfal.github.io/hanged-man/service-worker.js",
+    "static/css/main.a1f38011.chunk.css.map": "sebastianrachfal.github.io/hanged-man/static/css/main.a1f38011.chunk.css.map",
+    "static/js/2.a08938c6.chunk.js.LICENSE": "sebastianrachfal.github.io/hanged-man/static/js/2.a08938c6.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.36f66594.js",
+    "static/js/2.a08938c6.chunk.js",
+    "static/css/main.a1f38011.chunk.css",
+    "static/js/main.44883065.chunk.js"
+  ]
+}
