@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c7cbfed6af2b0316572743e925f6c00e",
+    "revision": "9f953ebbfe8267444c49374d107ca726",
     "url": "/demos/hanged-man/index.html"
   },
   {
-    "revision": "032a61ec922d1e228c7a",
-    "url": "/demos/hanged-man/static/css/main.a1f38011.chunk.css"
+    "revision": "f20e5b661e17ef759ff8",
+    "url": "/demos/hanged-man/static/css/main.6cd1ac5e.chunk.css"
   },
   {
     "revision": "725f6ac8c98b6dab2e86",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demos/hanged-man/static/js/2.a08938c6.chunk.js.LICENSE"
   },
   {
-    "revision": "032a61ec922d1e228c7a",
+    "revision": "f20e5b661e17ef759ff8",
     "url": "/demos/hanged-man/static/js/main.81bc0a9e.chunk.js"
   },
   {
