@@ -1,2 +1,2 @@
-TBA: Readme hanged-man!
-todo: add another language, add replay button, add tests
+Simple game where you have to guess the words letter by letter, created for my little sister.
+Use 'yarn start' to test it out!
